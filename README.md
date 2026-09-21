@@ -29,8 +29,14 @@ flowchart TD
     A[Inicio] --> B[Huella de Carbono]
     A --> C[Noticias]
     A --> D[Nosotros]
+    B --> C
+    B --> D
     B --> A
     C --> A
+    C --> B
+    C --> D
     D --> A
+    D --> B
+    D --> C
 ```
 
