@@ -1,0 +1,107 @@
+.nombresCasas {
+	display: flex;
+	justify-content: center;
+}
+
+.nombresCasas h2 {
+	position: absolute;
+	top: 80px;
+	color: var(--azul);
+	font-size: clamp(70px, 12vw, 180px);
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+.nombresCasas img {
+	position: absolute;
+	z-index: 2;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.textoLateral {
+	position: absolute;
+	z-index: 3;
+	top: 50%;
+	left: clamp(20px, 3vw, 50px);
+	color: #fff;
+	font-size: clamp(20px, 2.5vw, 40px);
+	font-style: italic;
+	font-weight: bold;
+	line-height: 1;
+}
+
+.esencia-scroll {
+	height: 200dvh;
+	position: relative;
+}
+
+.esencia {
+	position: sticky;
+	top: 0;
+	width: 100%;
+	height: 100dvh;
+}
+
+.esencia h2 {
+	position: absolute;
+	z-index: 1;
+	top: 80px;
+	left: 50%;
+	transform: translateX(-50%);
+	color: var(--azul);
+	font-size: clamp(70px, 12vw, 180px);
+}
+
+.esencia img {
+	position: absolute;
+	z-index: 2;
+	bottom: 0;
+	left: 20%;
+	width: 60%;
+	height: auto;
+}
+
+.textoEsencia {
+	position: absolute;
+	z-index: 3;
+	top: 50%;
+	right: 8%;
+	width: 35%;
+	transform: translateY(-50%) translateX(150px);
+	font-size: clamp(25px, 3vw, 45px);
+	line-height: 1.25;
+}
+
+.textoEsencia p {
+	color: #333;
+}
+
+@media (max-width: 700px) {
+
+	.nombresCasas h2,
+	.esencia h2 {
+		top: 50px;
+		font-size: clamp(55px, 14vw, 100px);
+	}
+
+	.textoLateral {
+		top: 55%;
+		font-size: clamp(18px, 5vw, 28px);
+	}
+
+	.esencia img {
+		left: 5%;
+		width: 90%;
+	}
+
+	.textoEsencia {
+		right: 5%;
+		width: 40%;
+		transform: translateY(-50%);
+		font-size: clamp(18px, 4vw, 28px);
+	}
+}
